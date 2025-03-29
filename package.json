@@ -1,0 +1,27 @@
+{
+  "name": "facebookboot",
+  "version": "1.0.0",
+  "main": "bot.js",
+  "type": "module",
+  "bin": "bot.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "pkg": {
+    "assets": [
+      "botOptions.json",
+      "image/**/*"
+    ]
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "cheerio": "^1.0.0",
+    "chromedriver": "^134.0.5",
+    "nodemon": "^3.1.9",
+    "selenium-webdriver": "^4.30.0",
+    "webdriver-manager": "^12.1.9"
+  }
+}

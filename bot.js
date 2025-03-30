@@ -54,17 +54,6 @@ const addPosts = async () => {
         await activeBox.sendKeys(config.postText);
 
         if (config.imagePath) {
-          let addPhotoButton = await driver.wait(
-            until.elementLocated(
-              By.xpath(
-                "//img[contains(@class, 'x1b0d499') and contains(@class, 'xl1xv1r')]"
-              )
-            ),
-            5000
-          );
-          await addPhotoButton.click();
-          await driver.sleep(2000);
-
           let fileInput = await driver.wait(
             until.elementLocated(
               By.xpath(
